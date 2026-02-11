@@ -47,3 +47,4 @@ jobs:
               -p 80:80 \
               --restart always \
               ${{ secrets.DOCKER_USERNAME }}/static-site:latest
+ 
