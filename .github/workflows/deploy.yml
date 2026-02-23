@@ -45,7 +45,7 @@ jobs:
             docker rm static-site || true
             docker run -d \
               --name static-site \
-              -p 8081:80 \
+              -p 3002:80 \
               --restart always \
               ${{ secrets.DOCKER_USERNAME }}/static-site:latest
  
